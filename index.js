@@ -38,7 +38,7 @@ async function submitHours(day) {
   day.querySelector('a.insert-row').click()
   const insertRow = await waitFor('tr.insert-row')
   insertRow.querySelector('input.checkin-str').value = '09:00'
-  insertRow.querySelector('input.checkout-str').value = '18:00'
+  insertRow.querySelector('input.checkout-str').value = '17:24'
   insertRow.querySelector('button.inline-confirm').click()
   await sleep(1000)
 }
